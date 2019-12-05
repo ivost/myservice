@@ -10,4 +10,4 @@ resources:
 images:
 - name: ivostoy/myservice
   newName: ivostoy/myservice
-  newTag: 0.12.5.0-b85b2b6-dirty
+  newTag: 0.12.5.0-df039f3-dirty
