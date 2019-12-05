@@ -7,6 +7,8 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/ivost/shared/pkg/version"
+
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	v1 "github.com/ivost/shared/grpc/myservice"
 	"github.com/ivost/shared/pkg/config"
@@ -41,6 +43,7 @@ func New(conf *config.Config) (s *Server) {
 	case 2:
 		// todo
 	}
+	version.Name = "myserver"
 	// Register reflection service on gRPC server.
 	reflection.Register(s.srv)
 	v1.RegisterMyServiceServer(s.srv, s)
@@ -55,7 +58,7 @@ func (s *Server) ListenAndServe() error {
 		return err
 	}
 
-	log.Printf("grpc Server ListenAndServe on %v, secure: %v", s.conf.GrpcAddr, s.conf.Secure)
+	log.Printf("%s gRPC Server on %v, secure: %v", version.Name, s.conf.GrpcAddr, s.conf.Secure)
 
 	go func() {
 		err = s.srv.Serve(l)
@@ -79,7 +82,6 @@ func (s *Server) ListenAndServe() error {
 		log.Printf("Register service error %v", err)
 		return err
 	}
-	log.Printf("REST Server ListenAndServe on %v/greet, secure: %v", 8080, s.conf.Secure)
-	return http.ListenAndServe(":8080", mux)
-	return err
+	log.Printf("%s REST Server on %v, secure: %v", version.Name, s.conf.RestAddr, s.conf.Secure)
+	return http.ListenAndServe(s.conf.RestAddr, mux)
 }

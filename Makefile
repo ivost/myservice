@@ -40,3 +40,4 @@ OVERLAYS=./k8s/overlays
 #POD:=$(shell kubectl get pod -l app=myservice -o  jsonpath='{.items[*].metadata.name}') > /dev/nul
 
 include ../shared/shared.mk
+

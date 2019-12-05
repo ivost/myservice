@@ -155,6 +155,14 @@ github.com/ivost/shared v0.0.0-20191205170731-5ac8656f975e h1:/gD6laJv5+oQsVWY9C
 github.com/ivost/shared v0.0.0-20191205170731-5ac8656f975e/go.mod h1:yZs44Vokhf6yb7zCfHiDA1fJRTQ5kJQY9GGIiYMWWTE=
 github.com/ivost/shared v0.0.0-20191205184549-51fabc0155e1 h1:/tBBFYRPyuYUOx5ZQop1qiKsSPoy4Wk3fTWFKEQYX2E=
 github.com/ivost/shared v0.0.0-20191205184549-51fabc0155e1/go.mod h1:yZs44Vokhf6yb7zCfHiDA1fJRTQ5kJQY9GGIiYMWWTE=
+github.com/ivost/shared v0.0.0-20191205194903-a68d40880653 h1:5uw+DxogbZ1RKY0K7fFwmv9YGsvPse8TPXah9U8q0/k=
+github.com/ivost/shared v0.0.0-20191205194903-a68d40880653/go.mod h1:Qc6uHYyRRNpF/1QYvyS6ZA3YAYvxywxl3ozcM6PyZP4=
+github.com/ivost/shared v0.0.0-20191205195302-9b89e26a3c38 h1:5gWXTXR4UCSiu209dJTVrik7TXR9L/VmAi0WpBrywY0=
+github.com/ivost/shared v0.0.0-20191205195302-9b89e26a3c38/go.mod h1:Qc6uHYyRRNpF/1QYvyS6ZA3YAYvxywxl3ozcM6PyZP4=
+github.com/ivost/shared v0.0.0-20191205200544-36015cc742bc h1:elRvP4pPmG3S5a21QBnyozlvxIcDVRYqZ/jtIRYYNRU=
+github.com/ivost/shared v0.0.0-20191205200544-36015cc742bc/go.mod h1:Qc6uHYyRRNpF/1QYvyS6ZA3YAYvxywxl3ozcM6PyZP4=
+github.com/ivost/shared v0.0.0-20191205203153-4da1024e9da7 h1:+H+xoA4ICZb+MmbKr1m0d8wFNGc3VBnZPvlOfthE7pk=
+github.com/ivost/shared v0.0.0-20191205203153-4da1024e9da7/go.mod h1:Qc6uHYyRRNpF/1QYvyS6ZA3YAYvxywxl3ozcM6PyZP4=
 github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99/go.mod h1:1lJo3i6rXxKeerYnT8Nvf0QmHCRC1n8sfWVwXF2Frvo=
 github.com/jessevdk/go-flags v1.4.0/go.mod h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=
 github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af/go.mod h1:Nht3zPeWKUH0NzdCt2Blrr5ys8VGpn0CEB0cQHVjt7k=
