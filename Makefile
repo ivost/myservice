@@ -20,7 +20,8 @@ BUILD_DATE := $(shell date +%Y%m%d-%H:%M:%S)
 
 GIT_COMMIT=$(shell git describe --dirty --always  2> /dev/null  || echo 'unknown')
 
-PKG=github.com/ivost/sandbox/myservice/pkg
+#PKG=github.com/ivost/myservice/pkg
+PKG=github.com/ivost/shared/pkg
 BUILDFLAGS=-ldflags "-s -w -X ${PKG}/version.Version=${VERSION} -X ${PKG}/version.Build=${GIT_COMMIT}"
 
 CGO_ENABLED = 0
